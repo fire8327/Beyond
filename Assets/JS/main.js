@@ -4,3 +4,11 @@ $("#toggler").click(() => {
     $("#menu").toggleClass("max-lg:top-full")
     $("#overlay").toggleClass("hidden")
 })
+
+
+/* FAQ */
+$(".FAQ").each((i, el) => {
+    $(el).find(".question").click(() => {
+        $(el).find(".answer").slideToggle()
+    })
+})
