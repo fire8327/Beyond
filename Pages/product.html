@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница продукта</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../Assets/CSS/main.css">
+</head>
+<body class="flex flex-col min-h-screen font-Jost bg-[#885041]/20 text-[#111111] text-xl">
+    <header class="flex w-full bg-white py-4 relative">
+        <div class="container mx-auto max-w-[1280px] px-4 flex items-center justify-between">
+            <a href="../index.html" class="text-2xl md:text-2xl font-Comfortaa">BEYOND</a>
+            <nav id="menu" class="flex items-center gap-4 z-[4] transition-all duration-500 max-lg:border-t max-lg:border-[#885041] max-lg:flex-col max-lg:absolute max-lg:top-0 max-lg:-translate-y-full max-lg:left-0 max-lg:bg-white max-lg:py-6 max-lg:w-full">
+                <a href="catalog.html" class="flex flex-col after:w-0 after:h-px after:bg-[#111111] after:transition-all after:duration-300 hover:after:w-full">Каталог</a>
+                <div class="w-0.5 h-0.5 rounded-full bg-[#111111]"></div>
+                <a href="about.html" class="flex flex-col after:w-0 after:h-px after:bg-[#111111] after:transition-all after:duration-300 hover:after:w-full">О нас </a>
+                <div class="w-0.5 h-0.5 rounded-full bg-[#111111]"></div>
+                <a href="delivery.html" class="flex flex-col after:w-0 after:h-px after:bg-[#111111] after:transition-all after:duration-300 hover:after:w-full">Каталог</a>
+                <div class="w-0.5 h-0.5 rounded-full bg-[#111111]"></div>
+                <a href="auth.html" class="flex flex-col after:w-0 after:h-px after:bg-[#111111] after:transition-all after:duration-300 hover:after:w-full">Вход</a>
+            </nav>
+            <div class="flex items-center gap-2">
+                <button class="max-md:hidden">
+                    <img src="../Assets/Images/header/search.png" alt="" class="w-7 h-7">
+                </button>
+                <a href="profile.html">
+                    <img src="../Assets/Images/header/profile.png" alt="" class="w-7 h-7">
+                </a>
+                <a href="favourites.html">
+                    <img src="../Assets/Images/header/favourites.png" alt="" class="w-7 h-7">
+                </a>
+                <a href="cart.html">
+                    <img src="../Assets/Images/header/cart.png" alt="" class="w-7 h-7">
+                </a>
+                <button id="toggler" class="lg:hidden">
+                    <img src="../Assets/Images/header/menu.png" alt="" class="w-7 h-7">
+                </button>
+            </div>
+        </div>
+        <div id="overlay" class="inset-0 bg-black/70 fixed z-[3] top-16 hidden lg:hidden"></div>
+    </header>
+
+    <section id="hero" class="w-full text-white text-center font-Comfortaa text-3xl py-4 bg-[#754133]">
+       <p>Страница продукта</p>
+    </section>
+    
+    <main class="flex flex-col gap-14 container mx-auto max-w-[1280px] px-4 py-10">
+        <div class="flex max-lg:flex-col gap-6">
+            <div class="w-full lg:w-1/2">
+                <img src="../Assets/Images/products/1.png" alt="" class="rounded-xl w-full">
+            </div>
+            <div class="w-full lg:w-1/2 flex flex-col gap-6 p-4 rounded-xl bg-white">
+                <p>КОЛЛЕКЦИЯ BALANCE Артикул 0P365311</p>
+                <p class="text-2xl font-Comfortaa">Кольцо из белого золота 750 пробы с бриллиантами</p>
+                <div class="flex flex-col gap-2">
+                    <p>Характеристики</p>
+                    <div class="flex flex-col w-full">
+                        <div class="flex items-center gap-2 w-full">
+                            <p>Артикул</p>
+                            <div class="h-px border-b border-black border-dotted grow"></div>
+                            <p>365311</p>
+                        </div>
+                        <div class="flex items-center gap-2 w-full">
+                            <p>Металл</p>
+                            <div class="h-px border-b border-black border-dotted grow"></div>
+                            <p>Белое Золото 750</p>
+                        </div>
+                        <div class="flex items-center gap-2 w-full">
+                            <p>Вставки</p>
+                            <div class="h-px border-b border-black border-dotted grow"></div>
+                            <p>21</p>
+                        </div>
+                        <div class="flex items-center gap-2 w-full">
+                            <p>Вес вставок</p>
+                            <div class="h-px border-b border-black border-dotted grow"></div>
+                            <p>0.58 карат</p>
+                        </div>
+                        <div class="flex items-center gap-2 w-full">
+                            <p>Вес украшения</p>
+                            <div class="h-px border-b border-black border-dotted grow"></div>
+                            <p>2.66 г</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="w-full md:w-[260px] px-4 py-1 rounded-xl bg-[#885041] text-white transition-all duration-500 border border-[#885041] hover:text-[#885041] hover:bg-transparent text-center">В корзину</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full py-4 text-xl text-center text-white bg-[#754133] mt-auto">
+        <span class="font-Comfortaa">© BEYOND</span> 2024
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../Assets/JS/main.js"></script>
+</body>
+</html>
