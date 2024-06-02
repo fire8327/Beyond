@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../Assets/CSS/main.css">
+</head>
+<body class="flex flex-col min-h-screen font-Jost bg-[#885041]/20 text-[#111111] text-xl">
+    <header class="flex w-full bg-white py-4 relative">
+        <div class="container mx-auto max-w-[1280px] px-4 flex items-center justify-between">
+            <a href="../index.html" class="text-2xl md:text-2xl font-Comfortaa">BEYOND</a>
+            <nav id="menu" class="flex items-center gap-4 z-[4] transition-all duration-500 max-lg:border-t max-lg:border-[#885041] max-lg:flex-col max-lg:absolute max-lg:top-0 max-lg:-translate-y-full max-lg:left-0 max-lg:bg-white max-lg:py-6 max-lg:w-full">
+                <a href="catalog.html" class="flex flex-col after:w-0 after:h-px after:bg-[#111111] after:transition-all after:duration-300 hover:after:w-full">Каталог</a>
+                <div class="w-0.5 h-0.5 rounded-full bg-[#111111]"></div>
+                <a href="about.html" class="flex flex-col after:w-0 after:h-px after:bg-[#111111] after:transition-all after:duration-300 hover:after:w-full">О нас </a>
+                <div class="w-0.5 h-0.5 rounded-full bg-[#111111]"></div>
+                <a href="delivery.html" class="flex flex-col after:w-0 after:h-px after:bg-[#111111] after:transition-all after:duration-300 hover:after:w-full">Доставка и оплата</a>
+            </nav>
+            <div class="flex items-center gap-2">
+                <button class="max-md:hidden">
+                    <img src="../Assets/Images/header/search.png" alt="" class="w-7 h-7">
+                </button>
+                <a href="profile.html">
+                    <img src="../Assets/Images/header/profile.png" alt="" class="w-7 h-7">
+                </a>
+                <a href="favourites.html">
+                    <img src="../Assets/Images/header/favourites.png" alt="" class="w-7 h-7">
+                </a>
+                <a href="cart.html">
+                    <img src="../Assets/Images/header/cart.png" alt="" class="w-7 h-7">
+                </a>
+                <button id="toggler" class="lg:hidden">
+                    <img src="../Assets/Images/header/menu.png" alt="" class="w-7 h-7">
+                </button>
+            </div>
+        </div>
+        <div id="overlay" class="inset-0 bg-black/70 fixed z-[3] top-16 hidden lg:hidden"></div>
+    </header>
+
+    <section id="hero" class="w-full text-white text-center font-Comfortaa text-3xl py-4 bg-[#754133]">
+       <p>Доставка и оплата</p>
+    </section>
+    
+    <main class="flex flex-col gap-14 container mx-auto max-w-[1280px] px-4 py-10">
+        <div class="grid grid-cols-2 p-4 gap-6 text-white bg-[#754133] rounded-xl">
+            <div class="md:col-span-1 flex flex-col gap-4 border border-white border-dashed p-4">
+                <p class="text-center font-Comfortaa text-2xl">Доставка</p>
+                <p>Мы осуществляем доставку ювелирных изделий по всей России и за ее пределы. </p>
+                <p>По России: 3-5 рабочих дней, стоимость доставки - от 300 рублей.</p>
+                <p>Международная доставка: 7-14 рабочих дней, стоимость - от 500 рублей.</p>
+            </div>
+            <div class="md:col-span-1 flex flex-col gap-4 border border-white border-dashed p-4">
+                <p class="text-center font-Comfortaa text-2xl">Оплата</p>
+                <p>Онлайн-платежи: принимаются карты Visa, Mastercard, PayPal.</p>
+                <p>Банковский перевод: доступен при предварительном согласовании.</p>
+                <p>Оплата при получении: возможна наличными или картой.</p>
+            </div>
+            <div class="col-span-full flex flex-col gap-4 border border-white border-dashed p-4">
+                <p>Мы гарантируем возможность возврата товара в течение 14 дней и обмена в течение 30 дней с момента покупки. Для возврата или обмена товара необходимо сохранить ориги</p>
+                <p>Если у вас возникли вопросы по доставке, оплате или другим вопросам, не стесняйтесь обращаться к нам:</p>
+                <p>
+                    Телефон: <a class="flex flex-col after:w-0 after:h-px after:bg-white after:transition-all after:duration-300 hover:after:w-full w-fit" href="tel:+7 (XXX) XXX-XX-XX">+7 (XXX) XXX-XX-XX</a>
+                    Email:  <a class="flex flex-col after:w-0 after:h-px after:bg-white after:transition-all after:duration-300 hover:after:w-full w-fit" href="mailto:info@jewelryshop.ru">info@jewelryshop.ru</a>
+                    Адрес: г. Москва, ул. Примерная, д. 123
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full py-4 text-xl text-center text-white bg-[#754133] mt-auto">
+        <span class="font-Comfortaa">© BEYOND</span> 2024
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../Assets/JS/main.js"></script>
+</body>
+</html>
