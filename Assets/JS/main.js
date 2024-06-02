@@ -12,3 +12,9 @@ $(".FAQ").each((i, el) => {
         $(el).find(".answer").slideToggle()
     })
 })
+
+
+/* табы */
+$("#tabs").tabs({
+    active: 0
+});
